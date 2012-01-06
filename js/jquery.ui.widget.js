@@ -8,10 +8,7 @@
  * http://docs.jquery.com/UI/Widget
  */
 
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
-define(function() {
-//>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
+define( [ "jquery" ], function( $ ) {
 
 // jQuery 1.4+
 if ( $.cleanData ) {
@@ -263,7 +260,4 @@ $.Widget.prototype = {
 	}
 };
 
-})( jQuery );
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
-//>>excludeEnd("jqmBuildExclude");

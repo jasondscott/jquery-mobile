@@ -2,18 +2,16 @@
 * custom "selectmenu" plugin
 */
 
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 define( [
-	"jquery.mobile.buttonMarkup",
-	"jquery.mobile.core",
-	"jquery.mobile.dialog",
-	"jquery.mobile.forms.select",
-	"jquery.mobile.listview",
-	"jquery.mobile.page",
+	"jquery",
+	"./jquery.mobile.buttonMarkup",
+	"./jquery.mobile.core",
+	"./jquery.mobile.dialog",
+	"./jquery.mobile.forms.select",
+	"./jquery.mobile.listview",
+	"./jquery.mobile.page",
 	// NOTE expects ui content in the defined page, see selector for menuPageContent definition
-	"jquery.mobile.page.sections" ], function() {
-//>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
+	"./jquery.mobile.page.sections" ], function( $ ) {
 	var extendSelect = function( widget ){
 
 		var select = widget.select,
@@ -501,7 +499,4 @@ define( [
 			extendSelect( selectmenuWidget );
 		}
 	});
-})( jQuery );
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
-//>>excludeEnd("jqmBuildExclude");

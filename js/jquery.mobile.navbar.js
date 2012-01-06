@@ -2,10 +2,7 @@
 * "navbar" plugin
 */
 
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
-define( [ "jquery.mobile.widget", "jquery.mobile.buttonMarkup", "jquery.mobile.grid" ], function() {
-//>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
+define( [ "jquery", "./jquery.mobile.widget", "./jquery.mobile.buttonMarkup", "./jquery.mobile.grid" ], function( $ ) {
 
 $.widget( "mobile.navbar", $.mobile.widget, {
 	options: {
@@ -50,7 +47,4 @@ $( document ).bind( "pagecreate create", function( e ){
 	$( $.mobile.navbar.prototype.options.initSelector, e.target ).navbar();
 });
 
-})( jQuery );
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
-//>>excludeEnd("jqmBuildExclude");

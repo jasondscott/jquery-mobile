@@ -2,10 +2,7 @@
 * a workaround for window.matchMedia
 */
 
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
-define( [ "jquery.mobile.core" ], function() {
-//>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
+define( [ "jquery", "./jquery.mobile.core" ], function( $ ) {
 
 var $window = $( window ),
 	$html = $( "html" );
@@ -45,7 +42,4 @@ $.mobile.media = (function() {
 	};
 })();
 
-})(jQuery);
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
-//>>excludeEnd("jqmBuildExclude");

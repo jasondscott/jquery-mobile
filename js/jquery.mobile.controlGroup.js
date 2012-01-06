@@ -2,10 +2,7 @@
 * "controlgroup" plugin - corner-rounding for groups of buttons, checks, radios, etc
 */
 
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
-define( [ "jquery.mobile.buttonMarkup" ], function() {
-//>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
+define( [ "jquery", "./jquery.mobile.buttonMarkup" ], function( $ ) {
 
 $.fn.controlgroup = function( options ) {
 
@@ -53,7 +50,4 @@ $( document ).bind( "pagecreate create", function( e ){
 	$( ":jqmData(role='controlgroup')", e.target ).controlgroup({ excludeInvisible: false });
 });
 	
-})(jQuery);
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
-//>>excludeEnd("jqmBuildExclude");

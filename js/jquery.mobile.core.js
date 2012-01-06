@@ -2,10 +2,7 @@
 * "core" - The base file for jQm
 */
 
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
-define( [ "jquery.mobile.widget" ], function() {
-//>>excludeEnd("jqmBuildExclude");
-(function( $, window, undefined ) {
+define( [ "jquery", "./jquery.mobile.widget" ], function( $ ) {
 
 	var nsNormalizeDict = {};
 
@@ -252,8 +249,5 @@ define( [ "jquery.mobile.widget" ], function() {
 	$.find.matchesSelector = function( node, expr ) {
 		return $.find( expr, null, null, [ node ] ).length > 0;
 	};
-})( jQuery, this );
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
-//>>excludeEnd("jqmBuildExclude");
 

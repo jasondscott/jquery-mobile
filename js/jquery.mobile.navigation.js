@@ -2,14 +2,12 @@
 * core utilities for auto ajax navigation, base tag mgmt,
 */
 
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 define( [
-	"jquery.mobile.core",
-	"jquery.mobile.event",
-	"jquery.mobile.hashchange",
-	"jquery.mobile.page" ], function() {
-//>>excludeEnd("jqmBuildExclude");
-( function( $, undefined ) {
+	"jquery",
+	"./jquery.mobile.core",
+	"./jquery.mobile.event",
+	"./jquery.mobile.hashchange",
+	"./jquery.mobile.page" ], function( $ ) {
 
 	//define vars for interal use
 	var $window = $( window ),
@@ -1505,7 +1503,4 @@ define( [
 
 	};//_registerInternalEvents callback
 
-})( jQuery );
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
-//>>excludeEnd("jqmBuildExclude");

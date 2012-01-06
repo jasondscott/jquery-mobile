@@ -2,10 +2,7 @@
 * "fixHeaderFooter" plugin - on-demand positioning for headers,footers
 */
 
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
-define( [ "jquery.mobile.core", "jquery.mobile.vmouse" ], function() {
-//>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
+define( [ "jquery", "./jquery.mobile.core", "./jquery.mobile.vmouse" ], function( $ ) {
 
 var slideDownClass = "ui-header-fixed ui-fixed-inline fade",
 	slideUpClass = "ui-footer-fixed ui-fixed-inline fade",
@@ -375,7 +372,4 @@ $( document ).bind( "pagecreate create", function( event ) {
 	}
 });
 
-})( jQuery );
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
-//>>excludeEnd("jqmBuildExclude");

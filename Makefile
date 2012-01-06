@@ -109,15 +109,7 @@ init:
 # Build and minify the JS files
 js: init
 	# Build the JavaScript file
-	@@java -XX:ReservedCodeCacheSize=64m \
-		-classpath build/js.jar:build/google-compiler-20111003.jar org.mozilla.javascript.tools.shell.Main \
-		external/r.js/dist/r.js \
-	 	-o baseUrl="js" \
-		include=jquery.mobile,jquery.mobile.exports exclude=jquery,order \
-		out=${OUTPUT}/${NAME}.compiled.js \
-		pragmasOnSave.jqmBuildExclude=true \
-		skipModuleInsertion=true \
-		optimize=none
+	@@node build/jsbuild.js ${OUTPUT}/${NAME}.compiled.js
 	@@cat LICENSE-INFO.txt | ${VER} > ${OUTPUT}/${NAME}.js
 	@@cat ${OUTPUT}/${NAME}.compiled.js >> ${OUTPUT}/${NAME}.js
 	@@rm ${OUTPUT}/${NAME}.compiled.js

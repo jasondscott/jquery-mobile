@@ -2,10 +2,7 @@
 * "dialog" plugin.
 */
 
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
-define( [ "jquery.mobile.widget" ], function() {
-//>>excludeEnd("jqmBuildExclude");
-(function( $, window, undefined ) {
+define( [ "jquery", "./jquery.mobile.widget" ], function( $ ) {
 
 $.widget( "mobile.dialog", $.mobile.widget, {
 	options: {
@@ -77,7 +74,4 @@ $( document ).delegate( $.mobile.dialog.prototype.options.initSelector, "pagecre
 	$( this ).dialog();
 });
 
-})( jQuery, this );
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
-//>>excludeEnd("jqmBuildExclude");

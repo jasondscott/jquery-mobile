@@ -2,10 +2,7 @@
 * "collapsibleset" plugin
 */
 
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
-define( [ "jquery.mobile.widget", "jquery.mobile.collapsible" ], function() {
-//>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
+define( [ "jquery", "./jquery.mobile.widget", "./jquery.mobile.collapsible" ], function( $ ) {
 
 $.widget( "mobile.collapsibleset", $.mobile.widget, {
 	options: {
@@ -82,7 +79,4 @@ $( document ).bind( "pagecreate create", function( e ){
 	$( $.mobile.collapsibleset.prototype.options.initSelector, e.target ).collapsibleset();
 });
 
-})( jQuery );
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
-//>>excludeEnd("jqmBuildExclude");

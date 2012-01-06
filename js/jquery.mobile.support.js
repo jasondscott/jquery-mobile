@@ -2,12 +2,9 @@
 * support tests
 */
 
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 // For test purposes we can't use anonymous module here otherwise
 // the tests will throw http://requirejs.org/docs/errors.html#mismatch
-define( "jquery.mobile.support", [ "jquery.mobile.media" ], function() {
-//>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
+define( "jquery.mobile.support", [ "jquery", "./jquery.mobile.media" ], function( $ ) {
 
 var fakeBody = $( "<body>" ).prependTo( "html" ),
 	fbCSS = fakeBody[ 0 ].style,
@@ -122,7 +119,4 @@ if ( !$.support.boxShadow ) {
 	$( "html" ).addClass( "ui-mobile-nosupport-boxshadow" );
 }
 
-})( jQuery );
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
-//>>excludeEnd("jqmBuildExclude");

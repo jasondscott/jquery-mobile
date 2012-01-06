@@ -2,10 +2,7 @@
 * "events" plugin - Handles events
 */
 
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
-define( [ "jquery.mobile.core", "jquery.mobile.media", "jquery.mobile.support", "jquery.mobile.vmouse" ], function() {
-//>>excludeEnd("jqmBuildExclude");
-(function( $, window, undefined ) {
+define( [ "jquery", "./jquery.mobile.core", "./jquery.mobile.media", "./jquery.mobile.support", "./jquery.mobile.vmouse" ], function( $ ) {
 
 // add new event shortcuts
 $.each( ( "touchstart touchmove touchend orientationchange throttledresize " +
@@ -348,7 +345,4 @@ $.each({
 	};
 });
 
-})( jQuery, this );
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
-//>>excludeEnd("jqmBuildExclude");

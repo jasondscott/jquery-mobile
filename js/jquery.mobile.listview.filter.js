@@ -2,10 +2,7 @@
 * "listview" filter extension
 */
 
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
-define( [ "jquery.mobile.listview", "jquery.mobile.forms.textinput" ], function() {
-//>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
+define( [ "jquery", "./jquery.mobile.listview", "./jquery.mobile.forms.textinput" ], function( $ ) {
 
 $.mobile.listview.prototype.options.filter = false;
 $.mobile.listview.prototype.options.filterPlaceholder = "Filter items...";
@@ -112,7 +109,4 @@ $( document ).delegate( ":jqmData(role='listview')", "listviewcreate", function(
 	.insertBefore( list );
 });
 
-})( jQuery );
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
-//>>excludeEnd("jqmBuildExclude");

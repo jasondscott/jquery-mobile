@@ -76,7 +76,7 @@
 //         extra awesomeness that BBQ provides. This plugin will be included as
 //         part of jQuery BBQ, but also be available separately.
 
-(function($,window,undefined){
+define( [ "jquery" ], function( $ ) {
   // Reused string.
   var str_hashchange = 'hashchange',
     
@@ -376,4 +376,4 @@
     return self;
   })();
   
-})(jQuery,this);
+});

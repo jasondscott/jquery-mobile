@@ -2,10 +2,7 @@
 * This plugin handles theming and layout of headers, footers, and content areas
 */
 
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
-define( [ "jquery.mobile.page", "jquery.mobile.core", "jquery.mobile.buttonMarkup" ], function() {
-//>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
+define( [ "jquery", "./jquery.mobile.page", "./jquery.mobile.core", "./jquery.mobile.buttonMarkup" ], function( $ ) {
 
 $.mobile.page.prototype.options.backBtnText  = "Back";
 $.mobile.page.prototype.options.addBackBtn   = false;
@@ -87,7 +84,4 @@ $( document ).delegate( ":jqmData(role='page'), :jqmData(role='dialog')", "pagec
 	});
 });
 
-})( jQuery );
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
-//>>excludeEnd("jqmBuildExclude");

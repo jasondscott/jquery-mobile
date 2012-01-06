@@ -2,10 +2,7 @@
 * "buttons" plugin - for making button-like links
 */
 
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
-define( [ "jquery.mobile.core", "jquery.mobile.vmouse" ], function() {
-//>>excludeEnd("jqmBuildExclude");
-( function( $, undefined ) {
+define( [ "jquery", "./jquery.mobile.core", "./jquery.mobile.vmouse" ], function( $ ) {
 
 $.fn.buttonMarkup = function( options ) {
 	options = options || {};
@@ -204,8 +201,4 @@ $( document ).bind( "pagecreate create", function( e ){
 		.buttonMarkup();
 });
 
-})( jQuery );
-
-//>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
-//>>excludeEnd("jqmBuildExclude");
