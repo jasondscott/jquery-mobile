@@ -109,10 +109,21 @@ init:
 # Build and minify the JS files
 js: init
 	# Build the JavaScript file
-	@@node build/jsbuild.js ${OUTPUT}/${NAME}.compiled.js
+	@@java -XX:ReservedCodeCacheSize=64m \
+		-classpath build/js.jar:build/google-compiler-20111003.jar org.mozilla.javascript.tools.shell.Main \
+		external/r.js/dist/r.js \
+	 	-o baseUrl="js" \
+		include=jquery.mobile,jquery.mobile.init exclude=jquery,order \
+		out=${OUTPUT}/${NAME}.compiled.js \
+		pragmasOnSave.jqmBuildExclude=true \
+		skipModuleInsertion=true \
+		optimize=none
+	@@java -XX:ReservedCodeCacheSize=64m \
+		-classpath build/js.jar org.mozilla.javascript.tools.shell.Main \
+		build/WrapDefineJava.js ${OUTPUT}/${NAME}.compiled.js >> ${OUTPUT}/${NAME}.filtered.js
 	@@cat LICENSE-INFO.txt | ${VER} > ${OUTPUT}/${NAME}.js
-	@@cat ${OUTPUT}/${NAME}.compiled.js >> ${OUTPUT}/${NAME}.js
-	@@rm ${OUTPUT}/${NAME}.compiled.js
+	@@cat ${OUTPUT}/${NAME}.filtered.js >> ${OUTPUT}/${NAME}.js
+	@@rm ${OUTPUT}/${NAME}.compiled.js ${OUTPUT}/${NAME}.filtered.js
 	# ..... and then minify it
 	@@echo ${VER_MIN} > ${OUTPUT}/${NAME}.min.js
 	@@java -XX:ReservedCodeCacheSize=64m \
