@@ -2,6 +2,8 @@
 * "listview" plugin
 */
 
+//>>description: Adds a filtering textfield to listviews
+//>>label: Listview Filter
 define( [ "jquery", "./jquery.mobile.widget", "./jquery.mobile.buttonMarkup", "./jquery.mobile.page", "./jquery.mobile.page.sections" ], function( $ ) {
 
 //Keeps track of the number of lists per page UID

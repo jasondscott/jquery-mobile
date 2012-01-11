@@ -2,6 +2,8 @@
 * widget factory extentions for mobile
 */
 
+//>>description: Widget factory extentions for mobile.
+//>>label: Widget Factory Extensions
 define( [ "jquery", "./jquery.ui.widget" ], function( $ ) {
 
 $.widget( "mobile.widget", {

@@ -2,6 +2,8 @@
 * "page" plugin
 */
 
+//>>description: Basic page formatting.
+//>>label: Pages
 define( [ "jquery", "./jquery.mobile.widget" ], function( $ ) {
 
 $.widget( "mobile.page", $.mobile.widget, {

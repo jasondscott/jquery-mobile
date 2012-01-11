@@ -2,6 +2,8 @@
 * "degradeInputs" plugin - degrades inputs to another type after custom enhancements are made.
 */
 
+//>>description: Degrades inputs to another type after custom enhancements are made.
+//>>label: Degrade Inputs
 define( [ "jquery", "./jquery.mobile.page" ], function( $ ) {
 
 $.mobile.page.prototype.options.degradeInputs = {

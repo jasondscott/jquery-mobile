@@ -2,6 +2,8 @@
 * plugin for creating CSS grids
 */
 
+//>>description: Applies classes for grid styling.
+//>>label: CSS Grid Tool
 define( [ "jquery" ], function( $ ) {
 
 $.fn.grid = function( options ) {

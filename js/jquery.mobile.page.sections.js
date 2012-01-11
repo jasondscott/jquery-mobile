@@ -2,6 +2,8 @@
 * This plugin handles theming and layout of headers, footers, and content areas
 */
 
+//>>description: Theming and layout of headers, footers, and content areas
+//>>label: Page Sections
 define( [ "jquery", "./jquery.mobile.page", "./jquery.mobile.core", "./jquery.mobile.buttonMarkup" ], function( $ ) {
 
 $.mobile.page.prototype.options.backBtnText  = "Back";

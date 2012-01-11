@@ -2,6 +2,8 @@
 * "checkboxradio" plugin
 */
 
+//>>description: Consistent styling for checkboxes/radio buttons.
+//>>label: Checkboxes/Radio Buttons
 define( [ "jquery", "./jquery.mobile.core", "./jquery.mobile.widget", "./jquery.mobile.buttonMarkup" ], function( $ ) {
 
 $.widget( "mobile.checkboxradio", $.mobile.widget, {

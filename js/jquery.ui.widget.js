@@ -8,6 +8,8 @@
  * http://docs.jquery.com/UI/Widget
  */
 
+//>>description: jQuery UI Widget Factory.
+//>>label: Widget Factory
 define( [ "jquery" ], function( $ ) {
 
 // jQuery 1.4+

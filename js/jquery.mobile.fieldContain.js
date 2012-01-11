@@ -2,6 +2,8 @@
 * "fieldcontain" plugin - simple class additions to make form row separators
 */
 
+//>>description: Simple class additions to make form row separators
+//>>label: Fieldcontains
 define( [ "jquery" ], function( $ ) {
 
 $.fn.fieldcontain = function( options ) {

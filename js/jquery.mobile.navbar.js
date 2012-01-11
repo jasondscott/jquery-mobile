@@ -2,6 +2,8 @@
 * "navbar" plugin
 */
 
+//>>description: Formats groups of links as navigation bars.
+//>>label: Navigation Bars
 define( [ "jquery", "./jquery.mobile.widget", "./jquery.mobile.buttonMarkup", "./jquery.mobile.grid" ], function( $ ) {
 
 $.widget( "mobile.navbar", $.mobile.widget, {

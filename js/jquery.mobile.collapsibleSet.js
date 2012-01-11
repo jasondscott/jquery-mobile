@@ -2,6 +2,8 @@
 * "collapsibleset" plugin
 */
 
+//>>description: For creating grouped collapsible content areas.
+//>>label: Collapsible Sets
 define( [ "jquery", "./jquery.mobile.widget", "./jquery.mobile.collapsible" ], function( $ ) {
 
 $.widget( "mobile.collapsibleset", $.mobile.widget, {

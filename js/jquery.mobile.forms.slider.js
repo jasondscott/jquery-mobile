@@ -1,6 +1,9 @@
 /*
 * "slider" plugin
 */
+
+//>>description: Slider form widget
+//>>label: Slider
 define( [ "jquery", "./jquery.mobile.core", "./jquery.mobile.widget", "./jquery.mobile.forms.textinput", "./jquery.mobile.buttonMarkup" ], function( $ ) {
 
 $.widget( "mobile.slider", $.mobile.widget, {

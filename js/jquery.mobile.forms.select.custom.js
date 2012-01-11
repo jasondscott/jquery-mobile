@@ -2,6 +2,8 @@
 * custom "selectmenu" plugin
 */
 
+//>>description: Fully-custom select menus.
+//>>label: Custom Selects
 define( [
 	"jquery",
 	"./jquery.mobile.buttonMarkup",

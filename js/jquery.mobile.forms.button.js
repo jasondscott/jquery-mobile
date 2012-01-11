@@ -2,6 +2,8 @@
 * "button" plugin - links that proxy to native input/buttons
 */
 
+//>>description: Form Buttons
+//>>label: links that proxy to native input/buttons
 define( [ "jquery", "./jquery.mobile.widget", "./jquery.mobile.buttonMarkup"  ], function( $ ) {
 
 $.widget( "mobile.button", $.mobile.widget, {

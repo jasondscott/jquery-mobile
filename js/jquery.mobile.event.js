@@ -2,6 +2,8 @@
 * "events" plugin - Handles events
 */
 
+//>>description: Custom events and shortcuts.
+//>>label: Events
 define( [ "jquery", "./jquery.mobile.core", "./jquery.mobile.media", "./jquery.mobile.support", "./jquery.mobile.vmouse" ], function( $ ) {
 
 // add new event shortcuts

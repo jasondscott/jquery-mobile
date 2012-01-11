@@ -2,6 +2,8 @@
 * "init" - Initialize the framework
 */
 
+//>>description: Applies classes for grid styling.
+//>>label: CSS Grid Tool
 define( [ "jquery", "./jquery.mobile.core", "./jquery.mobile.navigation", "./jquery.mobile.navigation.pushstate" ], function( $ ) {
 	var	$html = $( "html" ),
 			$head = $( "head" ),

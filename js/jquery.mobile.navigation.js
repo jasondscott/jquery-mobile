@@ -2,6 +2,8 @@
 * core utilities for auto ajax navigation, base tag mgmt,
 */
 
+//>>description: Formats groups of links as nav bars.
+//>>label: Navigation Bars
 define( [
 	"jquery",
 	"./jquery.mobile.core",

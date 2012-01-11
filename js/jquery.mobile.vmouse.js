@@ -1,6 +1,3 @@
-/*
-* "mouse" plugin
-*/
 
 // This plugin is an experiment for abstracting away the touch and mouse
 // events so that developers don't have to worry about which method of input
@@ -17,6 +14,8 @@
 // The current version exposes the following virtual events to jQuery bind methods:
 // "vmouseover vmousedown vmousemove vmouseup vclick vmouseout vmousecancel"
 
+//>>description: Normalizes touch/mouse events.
+//>>label: Virtual Mouse Bindings
 define( [ "jquery" ], function( $ ) {
 
 var dataPropertyName = "virtualMouseBindings",

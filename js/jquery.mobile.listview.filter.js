@@ -2,6 +2,8 @@
 * "listview" filter extension
 */
 
+//>>description: Adds a filtering textfield to listviews
+//>>label: Listview Filter
 define( [ "jquery", "./jquery.mobile.listview", "./jquery.mobile.forms.textinput" ], function( $ ) {
 
 $.mobile.listview.prototype.options.filter = false;

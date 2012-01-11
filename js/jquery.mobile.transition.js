@@ -2,6 +2,9 @@
 * "transitions" plugin - Page change tranistions
 */
 
+//>>description: Page change tranistions.
+//>>label: Page Transitions
+
 // TODO the dependency defined here for transitions is to make sure
 // that the defaultTransitionHandler is defined _after_ navigation has been defined
 // This requires a rework/rethinking

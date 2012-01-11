@@ -2,6 +2,8 @@
 * a workaround for window.matchMedia
 */
 
+//>>description: A workaround for browsers without window.matchMedia
+//>>label: matchMedia Polyfill
 define( [ "jquery", "./jquery.mobile.core" ], function( $ ) {
 
 var $window = $( window ),

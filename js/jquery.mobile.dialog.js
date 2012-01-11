@@ -2,6 +2,8 @@
 * "dialog" plugin.
 */
 
+//>>description: Degrades inputs to another type after custom enhancements are made.
+//>>label: Dialog-style Pages
 define( [ "jquery", "./jquery.mobile.widget" ], function( $ ) {
 
 $.widget( "mobile.dialog", $.mobile.widget, {

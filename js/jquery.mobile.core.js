@@ -2,6 +2,8 @@
 * "core" - The base file for jQm
 */
 
+//>>description: For creating grouped collapsible content areas.
+//>>label: Collapsible Sets
 define( [ "jquery", "./jquery.mobile.widget" ], function( $ ) {
 
 	var nsNormalizeDict = {};

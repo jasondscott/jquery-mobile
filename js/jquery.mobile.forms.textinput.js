@@ -2,6 +2,8 @@
 * "textinput" plugin for text inputs, textareas
 */
 
+//>>description: Enhances and consistently styles text inputs.
+//>>label: Text Inputs
 define( [ "jquery", "./jquery.mobile.core", "./jquery.mobile.widget", "./jquery.mobile.degradeInputs", "./jquery.mobile.buttonMarkup"  ], function( $ ) {
 
 $.widget( "mobile.textinput", $.mobile.widget, {

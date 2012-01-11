@@ -2,6 +2,8 @@
 * "controlgroup" plugin - corner-rounding for groups of buttons, checks, radios, etc
 */
 
+//>>description: Corner-rounding for groups of buttons, checks, radios, etc
+//>>label: Controlgroups
 define( [ "jquery", "./jquery.mobile.buttonMarkup" ], function( $ ) {
 
 $.fn.controlgroup = function( options ) {

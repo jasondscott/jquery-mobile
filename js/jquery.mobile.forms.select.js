@@ -2,6 +2,8 @@
 * "selectmenu" plugin
 */
 
+//>>description: Consistent styling for native select menus.
+//>>label: Enhanced Native Selects
 define( [ "jquery", "./jquery.mobile.core", "./jquery.mobile.widget", "./jquery.mobile.buttonMarkup" ], function( $ ) {
 
 $.widget( "mobile.selectmenu", $.mobile.widget, {
