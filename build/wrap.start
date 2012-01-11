@@ -4,11 +4,13 @@
 		define( [ "jquery" ], function ( $ ) {
 			factory( $, root, doc );
 			return $.mobile;
-                });
+        });
 	} else {
 		// Browser globals
 		factory( root.jQuery, root, doc );
 	}
 }( this, document, function ( $, window, document, undefined ) {
 
-function def( factory ) { factory( $ ); }
+function define( name, deps, factory ) {
+	factory( $ );
+}
