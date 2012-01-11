@@ -113,18 +113,16 @@ js: init
 		-classpath build/js.jar:build/google-compiler-20111003.jar org.mozilla.javascript.tools.shell.Main \
 		external/r.js/dist/r.js \
 	 	-o baseUrl="js" \
-		include=jquery.mobile,jquery.mobile.init exclude=jquery,order \
+		include=jquery.mobile exclude=jquery,order \
 		out=${OUTPUT}/${NAME}.compiled.js \
-		pragmasOnSave.jqmBuildExclude=true \
 		findNestedDependencies=true \
 		skipModuleInsertion=true \
+		wrap.startFile=build/wrap.start \
+		wrap.endFile=build/wrap.end \
 		optimize=none
-	@@java -XX:ReservedCodeCacheSize=64m \
-		-classpath build/js.jar org.mozilla.javascript.tools.shell.Main \
-		build/WrapDefineJava.js ${OUTPUT}/${NAME}.compiled.js >> ${OUTPUT}/${NAME}.filtered.js
 	@@cat LICENSE-INFO.txt | ${VER} > ${OUTPUT}/${NAME}.js
-	@@cat ${OUTPUT}/${NAME}.filtered.js >> ${OUTPUT}/${NAME}.js
-	@@rm ${OUTPUT}/${NAME}.compiled.js ${OUTPUT}/${NAME}.filtered.js
+	@@cat ${OUTPUT}/${NAME}.compiled.js >> ${OUTPUT}/${NAME}.js
+	@@rm ${OUTPUT}/${NAME}.compiled.js
 	# ..... and then minify it
 	@@echo ${VER_MIN} > ${OUTPUT}/${NAME}.min.js
 	@@java -XX:ReservedCodeCacheSize=64m \
