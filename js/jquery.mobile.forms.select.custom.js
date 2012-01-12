@@ -17,7 +17,7 @@ define( [
 	// NOTE expects ui content in the defined page, see selector for menuPageContent definition
 	"./jquery.mobile.page.sections" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
+(function() {
 	var extendSelect = function( widget ){
 
 		var select = widget.select,
@@ -505,7 +505,7 @@ define( [
 			extendSelect( selectmenuWidget );
 		}
 	});
-})( jQuery );
+})();
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");

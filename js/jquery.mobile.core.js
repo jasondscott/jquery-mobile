@@ -4,7 +4,7 @@
 
 define( [ "jquery", "./jquery.mobile.widget" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-(function( $, window, undefined ) {
+(function() {
 
 	var nsNormalizeDict = {};
 
@@ -251,7 +251,7 @@ define( [ "jquery", "./jquery.mobile.widget" ], function( $ ) {
 	$.find.matchesSelector = function( node, expr ) {
 		return $.find( expr, null, null, [ node ] ).length > 0;
 	};
-})( jQuery, this );
+})();
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");

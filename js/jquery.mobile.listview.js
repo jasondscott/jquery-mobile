@@ -4,7 +4,7 @@
 
 define( [ "jquery", "./jquery.mobile.widget", "./jquery.mobile.buttonMarkup", "./jquery.mobile.page", "./jquery.mobile.page.sections" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
+(function() {
 
 //Keeps track of the number of lists per page UID
 //This allows support for multiple nested list in the same page
@@ -398,7 +398,7 @@ $( document ).bind( "pagecreate create", function( e ){
 	$( $.mobile.listview.prototype.options.initSelector, e.target ).listview();
 });
 
-})( jQuery );
+})();
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");

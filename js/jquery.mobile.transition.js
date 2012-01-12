@@ -11,7 +11,7 @@
 // This requires a rework/rethinking
 define( [ "jquery", "./jquery.mobile.core", "order!jquery.mobile.navigation" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-(function( $, window, undefined ) {
+(function() {
 
 function css3TransitionHandler( name, reverse, $to, $from ) {
 
@@ -51,7 +51,7 @@ if ( $.mobile.defaultTransitionHandler === $.mobile.noneTransitionHandler ) {
 	$.mobile.defaultTransitionHandler = css3TransitionHandler;
 }
 
-})( jQuery, this );
+})();
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");

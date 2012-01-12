@@ -3,7 +3,7 @@
 //>>label: Events
 define( [ "jquery", "./jquery.mobile.core", "./jquery.mobile.media", "./jquery.mobile.support", "./jquery.mobile.vmouse" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-(function( $, window, undefined ) {
+(function() {
 
 // add new event shortcuts
 $.each( ( "touchstart touchmove touchend orientationchange throttledresize " +
@@ -346,7 +346,7 @@ $.each({
 	};
 });
 
-})( jQuery, this );
+})();
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");

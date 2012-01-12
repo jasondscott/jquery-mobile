@@ -5,7 +5,7 @@
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 define( [ "jquery", "./jquery.mobile.core", "./jquery.mobile.vmouse" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
+(function() {
 
 var slideDownClass = "ui-header-fixed ui-fixed-inline fade",
 	slideUpClass = "ui-footer-fixed ui-fixed-inline fade",
@@ -375,7 +375,7 @@ $( document ).bind( "pagecreate create", function( event ) {
 	}
 });
 
-})( jQuery );
+})();
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");

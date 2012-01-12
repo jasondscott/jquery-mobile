@@ -9,7 +9,7 @@ define( [
 	"./jquery.mobile.hashchange",
 	"./jquery.mobile.page" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-( function( $, undefined ) {
+( function() {
 
 	//define vars for interal use
 	var $window = $( window ),
@@ -1505,7 +1505,7 @@ define( [
 
 	};//_registerInternalEvents callback
 
-})( jQuery );
+})();
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");

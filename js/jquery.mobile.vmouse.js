@@ -20,7 +20,7 @@
 
 define( [ "jquery" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-(function( $, window, document, undefined ) {
+(function() {
 
 var dataPropertyName = "virtualMouseBindings",
 	touchTargetPropertyName = "virtualTouchID",
@@ -503,7 +503,7 @@ if ( eventCaptureSupported ) {
 		}
 	}, true);
 }
-})( jQuery, window, document );
+})();
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");

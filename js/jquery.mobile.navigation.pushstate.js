@@ -4,7 +4,7 @@
 
 define( [ "jquery", "./jquery.mobile.navigation" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-( function( $, window ) {
+( function() {
 	// For now, let's Monkeypatch this onto the end of $.mobile._registerInternalEvents
 	// Scope self to pushStateHandler so we can reference it sanely within the
 	// methods handed off as event handlers
@@ -156,7 +156,7 @@ define( [ "jquery", "./jquery.mobile.navigation" ], function( $ ) {
 			pushStateHandler.init();
 		}
 	});
-})( jQuery, this );
+})();
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");

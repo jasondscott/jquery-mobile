@@ -4,7 +4,7 @@
 
 define( [ "jquery", "./jquery.mobile.core" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
+(function() {
 
 var $window = $( window ),
 	$html = $( "html" );
@@ -44,7 +44,7 @@ $.mobile.media = (function() {
 	};
 })();
 
-})(jQuery);
+})();
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");

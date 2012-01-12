@@ -4,7 +4,7 @@
 
 define( [ "jquery", "./jquery.mobile.core", "./jquery.mobile.vmouse" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-( function( $, undefined ) {
+( function() {
 
 $.fn.buttonMarkup = function( options ) {
 	options = options || {};
@@ -203,7 +203,7 @@ $( document ).bind( "pagecreate create", function( e ){
 		.buttonMarkup();
 });
 
-})( jQuery );
+})();
 
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });

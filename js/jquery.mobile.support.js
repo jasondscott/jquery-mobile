@@ -6,7 +6,7 @@
 // the tests will throw http://requirejs.org/docs/errors.html#mismatch
 define( "jquery.mobile.support", [ "jquery", "./jquery.mobile.media" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
+(function() {
 
 var fakeBody = $( "<body>" ).prependTo( "html" ),
 	fbCSS = fakeBody[ 0 ].style,
@@ -121,7 +121,7 @@ if ( !$.support.boxShadow ) {
 	$( "html" ).addClass( "ui-mobile-nosupport-boxshadow" );
 }
 
-})( jQuery );
+})();
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");
