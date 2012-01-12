@@ -113,11 +113,13 @@ js: init
 		-classpath build/js.jar:build/google-compiler-20111003.jar org.mozilla.javascript.tools.shell.Main \
 		external/r.js/dist/r.js \
 	 	-o baseUrl="js" \
-		include=jquery.mobile,jquery.mobile.exports exclude=jquery,order \
+		include=jquery.mobile exclude=jquery,order \
 		out=${OUTPUT}/${NAME}.compiled.js \
-		pragmasOnSave.jqmBuildExclude=true \
 		findNestedDependencies=true \
 		skipModuleInsertion=true \
+		pragmasOnSave.jqmBuildExclude=true \
+		wrap.startFile=build/wrap.start \
+		wrap.endFile=build/wrap.end \
 		optimize=none
 	@@cat LICENSE-INFO.txt | ${VER} > ${OUTPUT}/${NAME}.js
 	@@cat ${OUTPUT}/${NAME}.compiled.js >> ${OUTPUT}/${NAME}.js
