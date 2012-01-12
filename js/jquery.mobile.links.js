@@ -4,7 +4,6 @@
 
 define( [ "jquery" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
 
 $( document ).bind( "pagecreate create", function( e ){
 	
@@ -15,8 +14,6 @@ $( document ).bind( "pagecreate create", function( e ){
 		.addClass( "ui-link" );
 
 });
-
-})( jQuery );
 
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });

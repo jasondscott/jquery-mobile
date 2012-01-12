@@ -8,7 +8,6 @@
 
 define( [ "jquery", "./jquery.mobile.core", "./jquery.mobile.widget", "./jquery.mobile.buttonMarkup" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
 
 $.widget( "mobile.checkboxradio", $.mobile.widget, {
 	options: {
@@ -199,7 +198,6 @@ $( document ).bind( "pagecreate create", function( e ){
 	$.mobile.checkboxradio.prototype.enhanceWithin( e.target );
 });
 
-})( jQuery );
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");

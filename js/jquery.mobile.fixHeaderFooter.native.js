@@ -4,7 +4,6 @@
 
 define( [ "jquery", "./jquery.mobile.core" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
 
 // Enable touch overflow scrolling when it's natively supported
 $.mobile.touchOverflowEnabled = false;
@@ -59,7 +58,6 @@ $( document ).bind( "pagecreate", function( event ) {
 	}
 });
 
-})( jQuery );
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");

@@ -4,7 +4,6 @@
 
 define( [ "jquery", "./jquery.mobile.buttonMarkup" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
 
 $.fn.controlgroup = function( options ) {
 
@@ -52,7 +51,6 @@ $( document ).bind( "pagecreate create", function( e ){
 	$( ":jqmData(role='controlgroup')", e.target ).controlgroup({ excludeInvisible: false });
 });
 	
-})(jQuery);
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");

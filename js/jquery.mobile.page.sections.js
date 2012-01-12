@@ -4,7 +4,6 @@
 
 define( [ "jquery", "./jquery.mobile.page", "./jquery.mobile.core", "./jquery.mobile.buttonMarkup" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
 
 $.mobile.page.prototype.options.backBtnText  = "Back";
 $.mobile.page.prototype.options.addBackBtn   = false;
@@ -86,7 +85,6 @@ $( document ).delegate( ":jqmData(role='page'), :jqmData(role='dialog')", "pagec
 	});
 });
 
-})( jQuery );
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");

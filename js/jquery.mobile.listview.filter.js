@@ -4,7 +4,6 @@
 
 define( [ "jquery", "./jquery.mobile.listview", "./jquery.mobile.forms.textinput" ], function( $ ) {
 //>>excludeEnd("jqmBuildExclude");
-(function( $, undefined ) {
 
 $.mobile.listview.prototype.options.filter = false;
 $.mobile.listview.prototype.options.filterPlaceholder = "Filter items...";
@@ -111,7 +110,6 @@ $( document ).delegate( ":jqmData(role='listview')", "listviewcreate", function(
 	.insertBefore( list );
 });
 
-})( jQuery );
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");
