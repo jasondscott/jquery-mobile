@@ -27,7 +27,7 @@
 			function(){
 				// Verify that we are on the 2nd internal page.
 				$.testHelper.assertUrlLocation({
-					push: location.pathname + "#internal-page-2",
+					push: location.pathname + location.search + "#internal-page-2",
 					hash: "internal-page-2",
 					report: "navigate to internal page"
 				});
@@ -131,7 +131,7 @@
 				// Verify that we are on the expected page.
 				$.testHelper.assertUrlLocation({
 					hash:  "internal-page-2",
-					push: location.pathname + "#internal-page-2",
+					push: location.pathname + location.search + "#internal-page-2",
 					report: "call changePage() with a page id"
 				});
 
@@ -143,7 +143,7 @@
 				// Verify that we are on the expected page.
 				$.testHelper.assertUrlLocation({
 					hash:  "internal-page-2",
-					push: location.pathname + "#internal-page-2",
+					push: location.pathname + location.search + "#internal-page-2",
 					report: "calling changePage() with a page id that is not prefixed with '#' should not change page"
 				});
 
