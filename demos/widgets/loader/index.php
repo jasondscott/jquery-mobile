@@ -12,14 +12,14 @@
 	<script src="../../_assets/js/"></script>
 	<script src="../../../js/"></script>
 	<script>
-		$(document).on("click", ".show-page-loading-msg", function() {
+		$( document ).on( "click", ".show-page-loading-msg", function() {
 			var $this = $( this ),
-				theme = $this.jqmData("theme") || $.mobile.loader.prototype.options.theme,
-				msgText = $this.jqmData("msgtext") || $.mobile.loader.prototype.options.text,
-				textVisible = $this.jqmData("textvisible") || $.mobile.loader.prototype.options.textVisible,
-				textonly = !!$this.jqmData("textonly");
-				html = $this.jqmData("html") || "";
-			$.mobile.loading( 'show', {
+				theme = $this.jqmData( "theme" ) || $.mobile.loader.prototype.options.theme,
+				msgText = $this.jqmData( "msgtext" ) || $.mobile.loader.prototype.options.text,
+				textVisible = $this.jqmData( "textvisible" ) || $.mobile.loader.prototype.options.textVisible,
+				textonly = !!$this.jqmData( "textonly" );
+				html = $this.jqmData( "html" ) || "";
+			$.mobile.loading( "show", {
 					text: msgText,
 					textVisible: textVisible,
 					theme: theme,
@@ -27,8 +27,8 @@
 					html: html
 			});
 		})
-		.on("click", ".hide-page-loading-msg", function() {
-			$.mobile.loading( 'hide' );
+		.on( "click", ".hide-page-loading-msg", function() {
+			$.mobile.loading( "hide" );
 		});
 	</script>
 </head>
@@ -36,7 +36,7 @@
 <div data-role="page" class="jqm-demos" data-quicklinks="true">
 
 	<div data-role="header" class="jqm-header">
-		<h1 class="jqm-logo"><a href="../../../"><img src="../../_assets/img/jquery-logo.png" alt="jQuery Mobile Framework"></a></h1>
+		<h1 class="jqm-logo"><a href="../../"><img src="../../_assets/img/jquery-logo.png" alt="jQuery Mobile Framework"></a></h1>
 		<a href="#" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
 		<a href="#" class="jqm-search-link" data-icon="search" data-iconpos="notext">Search</a>
         <?php include( '../../search.php' ); ?>

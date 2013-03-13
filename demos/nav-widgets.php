@@ -14,7 +14,7 @@
 
 <li data-section="Widgets" data-filtertext="dialogs modal popups"><a href="widgets/dialog/">Dialogs</a></li>
 
-<li data-section="Widgets" data-filtertext="fixed toolbars headers footers sections fullscreen"><a href="widgets/headers/bars-fixed.php">Fixed toolbars</a></li>
+<li data-section="Widgets" data-filtertext="fixed toolbars headers footers sections fullscreen"><a href="widgets/fixed-toolbars/">Fixed toolbars</a></li>
 
 <li data-section="Widgets" data-filtertext="flip toggle switch binary slider selects forms disabled"><a href="widgets/sliders/switch.php" data-ajax="false">Flip switch toggle</a></li>
 
@@ -32,11 +32,11 @@
 
 <li data-section="Widgets" data-filtertext="listviews thumbnails icons nested split button collapsible ul ol"><a href="widgets/listviews/" data-ajax="false">Listviews</a></li>
 
-<li data-section="Widgets" data-filtertext="ajax loader overlay spinner pages"><a href="widgets/loader/">Loader overlay</a></li>
+<li data-section="Widgets" data-filtertext="ajax loader overlay spinner pages"><a href="widgets/loader/" data-ajax="false">Loader overlay</a></li>
 
 <li data-section="Widgets" data-filtertext="navbars navmenu toolbars links icons footer header"><a href="widgets/navbar/" data-ajax="false">Navbar</a></li>
 
-<li data-section="Widgets" data-filtertext="navbars persistent header footer links navmenu"><a href="widgets/navbar/footer-persist-a.php">Navbar, persistent</a></li>
+<li data-section="Widgets" data-filtertext="navbars persistent header footer links navmenu"><a href="widgets/fixed-toolbars/footer-persist-a.php">Navbar, persistent</a></li>
 
 <li data-section="Widgets" data-filtertext="pages single multipage templates ajax nav"><a href="widgets/pages/">Pages</a></li>
 
